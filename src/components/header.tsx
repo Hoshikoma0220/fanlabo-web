@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link';
 
 const Header: FC = () => {
   return (
@@ -6,12 +7,25 @@ const Header: FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">Team-FanLabo</h1>
         <nav className="space-x-6">
-          <a href="#home" className="hover:text-gray-300">Home</a>
-          <a href="#about" className="hover:text-gray-300">Overview</a> {/* OverviewをHomeの次に移動 */}
-          <a href="#members" className="hover:text-gray-300">Members</a>
-          <a href="#projects" className="hover:text-gray-300">Projects</a>
-          <a href="#contact" className="hover:text-gray-300">Contact</a>
-          <a href="#account" className="hover:text-gray-300">Account</a>
+          {/* Next.js の Link コンポーネントを使用してページ内リンクを設定 */}
+          <Link href="#home" className="hover:text-gray-300">
+            Home
+          </Link>
+          <Link href="#about" className="hover:text-gray-300">
+            Overview
+          </Link>
+          <Link href="#members" className="hover:text-gray-300">
+            Members
+          </Link>
+          <Link href="#projects" className="hover:text-gray-300">
+            Projects
+          </Link>
+          <Link href="#contact" className="hover:text-gray-300">
+            Contact
+          </Link>
+          <Link href="/account" className="hover:text-gray-300">
+            Account
+          </Link>
         </nav>
       </div>
     </header>

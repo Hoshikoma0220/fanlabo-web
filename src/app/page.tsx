@@ -1,8 +1,8 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import Header from '@/components/header';
+import Hero from '@/components/hero';
 import Overview from '@/components/overview';
 import Projects from '@/components/projects';
-import Footer from '@/components/Footer';
+import Footer from '@/components/footer';
 
 const Home = () => {
   return (
