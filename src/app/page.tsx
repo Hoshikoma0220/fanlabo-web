@@ -1,16 +1,18 @@
 import Header from '@/components/header';
 import Hero from '@/components/hero';
-import Overview from '@/components/overview';
-import Projects from '@/components/projects';
+import About from '@/components/about';
 import Footer from '@/components/footer';
+import News from '@/components/news'
+import Contact from '@/components/contact';
 
 const Home = () => {
   return (
     <div>
       <Header />
       <Hero />
-      <Overview />
-      <Projects />
+      <About />
+      <News />
+      <Contact/>
       <Footer />
     </div>
   );
