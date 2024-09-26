@@ -5,6 +5,7 @@ import Footer from '@/components/footer';
 import News from '@/components/news'
 import Contact from '@/components/contact';
 
+
 const Home = () => {
   return (
     <div>
